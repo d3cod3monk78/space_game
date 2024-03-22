@@ -1,6 +1,7 @@
 package com.game.main;
 
 import java.awt.Canvas;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 
@@ -70,7 +71,6 @@ public class Game extends Canvas implements Runnable {
 				frames = 0;
 			}
 		}
-		
 		this.stop();
 	}
 	
@@ -83,6 +83,9 @@ public class Game extends Canvas implements Runnable {
 		}
 		
 		Graphics g = bs.getDrawGraphics();
+		
+		g.setColor(Color.GREEN);
+		g.fillRect(0, 0, WIDTH, HEIGHT);
 		
 		g.dispose();
 		bs.show();
