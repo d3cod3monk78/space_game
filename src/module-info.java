@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+interface space_game {
+}
